@@ -1,31 +1,207 @@
+/* Reset & basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
-  font-family: Arial, sans-serif;
-  background-color: #5757f0; /* soft blue background */
-  color: #080808;
-  text-align: center;
-  padding: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
 }
 
-.logo {
-  width: 400px;
-  margin-bottom: 20px;
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #007bff;
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+.navbar .logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.navbar .nav-links a:hover {
+  color: #ffdd57;
 }
 
-header h1 {
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 5% 4rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: #f0f8ff;
+}
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+.hero-text h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.hero-text button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+.hero-text button:hover {
+  background: #0056b3;
+}
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+.hero-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  border: 3px solid #007bff;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
+/* Sections */
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #007bff;
+  font-size: 2rem;
+}
+
+/* Portfolio */
+#portfolio {
+  padding: 4rem 5%;
+}
+.portfolio-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.portfolio-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  max-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.portfolio-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+.portfolio-item p {
+  font-weight: bold;
+  color: #007bff;
+}
 
-button:hover {
-  background-color: #0056b3;
+/* Certifications */
+#certifications {
+  padding: 4rem 5%;
+  background: #fff;
+}
+.cert-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.cert-item {
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  max-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.cert-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.cert-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+.cert-item p {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem 5%;
+  text-align: center;
+}
+footer .social-links a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+footer .social-links a:hover {
+  color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-text button {
+    margin-top: 1rem;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

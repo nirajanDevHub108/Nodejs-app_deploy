@@ -5,207 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nirajan Singh - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* General Reset */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background: #f9f9f9;
-            color: #333;
-        }
-
-        header {
-            background: #007BFF;
-            color: #fff;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        header h1 {
-            margin-bottom: 0.5rem;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 3rem 5%;
-            background: #fff;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .hero-text {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .hero-text h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #007BFF;
-        }
-
-        .hero-text p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero-text button {
-            background: #007BFF;
-            color: #fff;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s ease;
-        }
-
-        .hero-text button:hover {
-            background: #0056b3;
-        }
-
-        .hero-image {
-            flex: 1;
-            min-width: 300px;
-            text-align: center;
-        }
-
-        .hero-image img {
-            max-width: 100%;
-            border-radius: 15px;
-            border: 3px solid #007BFF;
-        }
-
-        /* Portfolio Section */
-        #portfolio {
-            padding: 4rem 5%;
-            background: #f4f4f4;
-        }
-
-        #portfolio h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #007BFF;
-            font-size: 2rem;
-        }
-
-        .portfolio-gallery {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        .portfolio-item {
-            background: #fff;
-            border-radius: 10px;
-            padding: 1rem;
-            text-align: center;
-            max-width: 250px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .portfolio-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        }
-
-        .portfolio-item img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-bottom: 0.75rem;
-        }
-
-        .portfolio-item p {
-            font-weight: bold;
-            color: #007BFF;
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: #fff;
-            padding: 1.5rem 5%;
-            text-align: center;
-        }
-
-        footer nav a {
-            color: #fff;
-            margin: 0 0.5rem;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        footer nav a:hover {
-            color: #007BFF;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero {
-                flex-direction: column-reverse;
-                text-align: center;
-            }
-            .hero-text button {
-                margin-top: 1rem;
-            }
-        }
-    </style>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Portfolio</h1>
+<!-- Header / Navbar -->
+<header id="home">
+    <nav class="navbar">
+        <h1 class="logo">Nirajan Singh</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm Nirajan Singh</h1>
         <p>Salesforce DevOps Engineer | Node.js Developer | Tech Enthusiast</p>
-    </header>
+        <button onclick="window.open('https://www.linkedin.com/in/nirajan-singh-82b851190/','_blank')">
+            <i class="fab fa-linkedin"></i> Connect me on LinkedIn
+        </button>
+    </div>
+    <div class="hero-image">
+        <img src="trailblazer-social-picture (1).png" alt="Nirajan Singh">
+    </div>
+</section>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Hi, I'm Nirajan Singh</h1>
-            <p>I am a seasoned Salesforce DevOps Engineer with expertise in release management, CI/CD pipelines, and Salesforce automation. I hold multiple Salesforce certifications and have implemented robust DevOps practices in Agile environments.</p>
-            <button onclick="window.open('https://www.linkedin.com/in/nirajan-singh-82b851190/','_blank')">Connect me on LinkedIn</button>
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <h2>My Projects</h2>
+    <div class="portfolio-gallery">
+        <div class="portfolio-item">
+            <img src="/public/image/project1.png" alt="Project 1">
+            <p>Agentforce Slack Integration</p>
         </div>
-        <div class="hero-image">
-            <img src="trailblazer-social-picture (1).png" alt="Nirajan Singh">
+        <div class="portfolio-item">
+            <img src="/public/image/project2.png" alt="Project 2">
+            <p>Node.js App Deployment</p>
         </div>
-    </section>
+        <div class="portfolio-item">
+            <img src="/public/image/project3.png" alt="Project 3">
+            <p>GitHub Actions CI/CD</p>
+        </div>
+    </div>
+</section>
 
-    <section id="portfolio">
-        <h2>My Projects</h2>
-        <div class="portfolio-gallery">
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <p>Agentforce Slack Integration</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Project 2">
-                <p>Node.js App Deployment</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="project3.jpg" alt="Project 3">
-                <p>GitHub Actions CI/CD</p>
-            </div>
+<!-- Certification Section -->
+<section id="certifications">
+    <h2>My Certifications</h2>
+    <div class="cert-gallery">
+        <div class="cert-item">
+            <img src="/public/image/cert1.png" alt="Cert 1">
+            <p>Salesforce Platform Developer I</p>
         </div>
-    </section>
+        <div class="cert-item">
+            <img src="/public/image/cert2.png" alt="Cert 2">
+            <p>Salesforce Administrator</p>
+        </div>
+        <div class="cert-item">
+            <img src="/public/image/cert3.png" alt="Cert 3">
+            <p>Agent Force Specialist</p>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Nirajan Singh. All Rights Reserved. @NirajanDevHub</p>
-        <nav>
-            <a href="#hero">Home</a> | 
-            <a href="#portfolio">Portfolio</a> | 
-            <a href="#contact">Contact</a>
-        </nav>
-    </footer>
+<!-- Contact / Footer -->
+<footer id="contact">
+    <div class="footer-content">
+        <p>&copy; 2026 Nirajan Singh. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/nirajan-singh-82b851190/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/your-profile" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

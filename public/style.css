@@ -1,13 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #339bf6; /* soft blue background */
-  color: #130202;
+  background-color: #737374; /* soft blue background */
+  color: #080808;
   text-align: center;
   padding: 50px;
 }
 
 .logo {
-  width: 100px;
+  width: 400px;
   margin-bottom: 20px;
 }
 

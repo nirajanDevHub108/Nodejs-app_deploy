@@ -7,7 +7,12 @@ const port = process.env.PORT ?? 8081;
 // Serve static files from public folder
 app.use(express.static(path.join(process.cwd(), "public")));
 
-// Default route
+// API route
+app.get("/api", (req, res) => {
+  return res.json({ msg: "Hello from Render deployment!" });
+});
+
+// Default route to serve HTML
 app.get("/", (req, res) => {
   res.sendFile(path.join(process.cwd(), "public", "index.html"));
 });

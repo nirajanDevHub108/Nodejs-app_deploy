@@ -16,8 +16,93 @@
         <button>Click Me</button>
     </main>
 </body>
+<section id="portfolio"></section>
+    <h2>Portfolio</h2>
+    <div class="portfolio-gallery">
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <p>Project 1 Description</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <p>Project 2 Description</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project3.jpg" alt="Project 3">
+            <p>Project 3 Description</p>
+        </div>
+    </div>
+</section>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+    header {
+        background: #333;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    .logo {
+        max-width: 100px;
+    }
+    main {
+        padding: 2rem;
+        text-align: center;
+    }
+    button {
+        background: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    button:hover {
+        background: #0056b3;
+    }
+    #portfolio {
+        padding: 2rem;
+        background: #f4f4f4;
+    }
+    .portfolio-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .portfolio-item {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1rem;
+        text-align: center;
+        max-width: 200px;
+    }
+    .portfolio-item img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    footer nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 0.5rem;
+    }
+    footer nav a:hover {
+        text-decoration: underline;
+    }
+</style>
 <footer>
-    <p>&copy; 2023 My Node App. All rights reserved. @Nirajandevhub</p>
+    <p>&copy; 2026 My Node App. All rights reserved. @Nirajandevhub</p>
     <nav>
         <a href="#home">Home</a> | 
         <a href="#about">About</a> | 

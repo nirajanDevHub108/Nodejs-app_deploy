@@ -1,12 +1,17 @@
-import express from 'express'
+import express from "express";
+import path from "path";
 
-const app = express()
-const port = process.env.PORT ?? 8081
+const app = express();
+const port = process.env.PORT ?? 8081;
 
-app.get('/', (req, res) => {
-    return res.json({ msg: 'hello from the server' })
-})
+// Serve static files from public folder
+app.use(express.static(path.join(process.cwd(), "public")));
+
+// Default route
+app.get("/", (req, res) => {
+  res.sendFile(path.join(process.cwd(), "public", "index.html"));
+});
 
 app.listen(port, () => {
-    console.log(`Server is up and running on port ${port}`)
-})
+  console.log(`Server is up and running on port ${port}`);
+});

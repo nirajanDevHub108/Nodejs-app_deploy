@@ -11,6 +11,16 @@
     />
 
 </head>
+<script>
+    function openMenu() {
+      document.getElementById("mobile-menu").classList.add("open");
+    }
+  
+    function closeMenu() {
+      document.getElementById("mobile-menu").classList.remove("open");
+    }
+  </script>
+  
 <body>
 
 <!-- Header / Navbar -->
@@ -18,24 +28,32 @@
     <nav class="navbar">
       <h1 class="logo">Nirajan Singh</h1>
   
-      <ul class="nav-links">
+      <!-- Desktop Nav -->
+      <ul class="nav-links desktop-nav">
         <li><a href="#home">Home</a></li>
         <li><a href="#portfolio">Projects</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
-  
-        <!-- Resume button -->
         <li>
-          <a
-            href="/resume/NirajansinghSalesforceDevopsResume (1).pdf"
-            target="_blank"
-            class="resume-btn"
-          >
+          <a href="/resume/NirajansinghSalesforceDevopsResume (1).pdf" target="_blank" class="resume-btn">
             Resume
           </a>
         </li>
       </ul>
+  
+      <!-- Mobile Menu Icon -->
+      <div class="menu-icon" onclick="openMenu()">☰</div>
     </nav>
+  
+    <!-- Mobile Side Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <span class="close-btn" onclick="closeMenu()">✕</span>
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#portfolio" onclick="closeMenu()">Projects</a>
+      <a href="#certifications" onclick="closeMenu()">Certifications</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+      <a href="/resume/NirajansinghSalesforceDevopsResume (1).pdf" target="_blank">Resume</a>
+    </div>
   </header>
   
 

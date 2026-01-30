@@ -283,11 +283,19 @@ footer p {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .menu-icon,
   .desktop-nav {
-    display: none;
+    display: none !important;
   }
-  .menu-icon {
-    display: block;
+
+  /* Center the logo / name */
+  .navbar {
+    justify-content: center; /* centers logo horizontally */
+  }
+
+  .logo {
+    font-size: 1.8rem; /* make it slightly bigger on mobile */
+    text-align: center;
   }
   .hero {
     flex-direction: column-reverse;

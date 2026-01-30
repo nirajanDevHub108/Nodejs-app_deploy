@@ -6,158 +6,151 @@
     <title>Nirajan Singh - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
 </head>
-<script>
-    function openMenu() {
-      document.getElementById("mobile-menu").classList.add("open");
-    }
-  
-    function closeMenu() {
-      document.getElementById("mobile-menu").classList.remove("open");
-    }
-  </script>
-  
 <body>
 
 <!-- Header / Navbar -->
 <header id="home">
     <nav class="navbar">
-      <h1 class="logo">Nirajan Singh</h1>
-  
-      <!-- Desktop Nav -->
-      <ul class="nav-links desktop-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="/resume/NirajansinghSalesforceDevopsResume (1).pdf" target="_blank" class="resume-btn">
-            Resume
-          </a>
-        </li>
-      </ul>
-  
-      <!-- Mobile Menu Icon -->
-      <div class="menu-icon" onclick="openMenu()">☰</div>
+        <h1 class="logo">Nirajan Singh</h1>
+
+        <!-- Desktop Nav -->
+        <ul class="nav-links desktop-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="/resume/NirajansinghSalesforceDevopsResume (1).pdf" target="_blank" class="resume-btn">
+                    Resume
+                </a>
+            </li>
+        </ul>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon" onclick="openMenu()">☰</div>
     </nav>
-  
+
     <!-- Mobile Side Menu -->
     <div id="mobile-menu" class="mobile-menu">
-      <span class="close-btn" onclick="closeMenu()">✕</span>
-      <a href="#home" onclick="closeMenu()">Home</a>
-      <a href="#portfolio" onclick="closeMenu()">Projects</a>
-      <a href="#certifications" onclick="closeMenu()">Certifications</a>
-      <a href="#contact" onclick="closeMenu()">Contact</a>
-      <a href="/resume/NirajansinghSalesforceDevopsResume (1).pdf" target="_blank">Resume</a>
+        <span class="close-btn" onclick="closeMenu()">✕</span>
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#portfolio" onclick="closeMenu()">Projects</a>
+        <a href="#certifications" onclick="closeMenu()">Certifications</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+        <a href="/resume/NirajansinghSalesforceDevopsResume (1).pdf" target="_blank">Resume</a>
     </div>
-  </header>
-  
+</header>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-text">
-        <h1>Hi, I'm Nirajan Singh</h1>
-        <p>Salesforce DevOps Engineer | Node.js Developer | DevOps Tech Enthusiast</p>
-        <button onclick="window.open('https://www.linkedin.com/in/nirajan-singh-82b851190/','_blank')">
-            <i class="fab fa-linkedin"></i> Connect me on LinkedIn
-        </button>
-    </div>
-    <div class="hero-image">
-        <img src="trailblazer-social-picture (1).png" alt="Nirajan Singh">
-    </div>
-</section>
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Nirajan Singh</h1>
+            <p>Salesforce DevOps Engineer | Node.js Developer | DevOps Tech Enthusiast</p>
+            <button onclick="window.open('https://www.linkedin.com/in/nirajan-singh-82b851190/','_blank')">
+                <i class="fab fa-linkedin"></i> Connect me on LinkedIn
+            </button>
+        </div>
+        <div class="hero-image">
+            <img src="trailblazer-social-picture (1).png" alt="Nirajan Singh Portrait">
+        </div>
+    </section>
 
-<!-- About Me Section -->
-<section id="about">
-    <h2>About Me</h2>
-    <div class="about-content">
-        <p>
-            I am a seasoned Salesforce DevOps Engineer with expertise in release management, release engineering, and extensive knowledge of the Salesforce platform. I hold certifications as a Salesforce Platform Developer I, Administrator, AI Associate, and 3x Copado SFDC DevOps. With a proven track record of implementing robust DevOps practices, designing and executing CI/CD pipelines, and managing metadata migrations and version control, I am skilled in driving efficiency within Agile environments. Proficient in tools such as Jenkins, Copado, Gearset, and Azure DevOps, I focus on delivering high-quality solutions and automation in Salesforce DevOps.
-        </p>
-    </div>
-</section>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                I am a seasoned Salesforce DevOps Engineer with expertise in release management, release engineering, and extensive knowledge of the Salesforce platform. I hold certifications as a Salesforce Platform Developer I, Administrator, AI Associate, and 3x Copado SFDC DevOps. With a proven track record of implementing robust DevOps practices, designing and executing CI/CD pipelines, and managing metadata migrations and version control, I am skilled in driving efficiency within Agile environments. Proficient in tools such as Jenkins, Copado, Gearset, and Azure DevOps, I focus on delivering high-quality solutions and automation in Salesforce DevOps.
+            </p>
+        </div>
+    </section>
 
-<!-- Portfolio Section -->
-<section id="portfolio">
-    <h2>My Projects</h2>
-    <div class="portfolio-gallery">
-        <div class="portfolio-item">
-            <img src="image/project1.png" alt="Project 1">
-            <p>Agentforce Slack Integration</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <img src="image/project1.png" alt="Agentforce Slack Integration">
+                <p>Agentforce Slack Integration</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="image/project2.png" alt="Node.js App Deployment">
+                <p>Node.js App Deployment</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="image/project3.png" alt="GitHub Actions CI/CD">
+                <p>GitHub Actions CI/CD</p>
+            </div>
         </div>
-        <div class="portfolio-item">
-            <img src="image/project2.png" alt="Project 2">
-            <p>Node.js App Deployment</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="image/project3.png" alt="Project 3">
-            <p>GitHub Actions CI/CD</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Certification Section -->
-<section id="certifications">
-    <h2>My Certifications</h2>
-    <div class="cert-gallery">
-        <div class="cert-item">
-            <img src="image/cert1.png" alt="Cert 1">
-            <p>Salesforce Platform Developer I</p>
+    <!-- Certification Section -->
+    <section id="certifications">
+        <h2>My Certifications</h2>
+        <div class="cert-gallery">
+            <div class="cert-item">
+                <img src="image/cert1.png" alt="Salesforce Platform Developer I">
+                <p>Salesforce Platform Developer I</p>
+            </div>
+            <div class="cert-item">
+                <img src="image/cert2.png" alt="Salesforce Administrator">
+                <p>Salesforce Administrator</p>
+            </div>
+            <div class="cert-item">
+                <img src="image/cert3.png" alt="Agent Force Specialist">
+                <p>Agent Force Specialist</p>
+            </div>
+            <div class="cert-item">
+                <img src="image/cert3.png" alt="Copado Metadata pipeline I">
+                <p>Copado Metadata pipeline I</p>
+            </div>
+            <div class="cert-item">
+                <img src="image/cert3.png" alt="Copado Metadata pipeline II">
+                <p>Copado Metadata pipeline II</p>
+            </div>
+            <div class="cert-item">
+                <img src="image/cert3.png" alt="Copado Source Format pipeline I">
+                <p>Copado Source Format pipeline I</p>
+            </div>
         </div>
-        <div class="cert-item">
-            <img src="image/cert2.png" alt="Cert 2">
-            <p>Salesforce Administrator</p>
-        </div>
-        <div class="cert-item">
-            <img src="image/cert3.png" alt="Cert 3">
-            <p>Agent Force Specialist</p>
-        </div>
-        <div class="cert-item">
-            <img src="image/cert3.png" alt="Cert 3">
-            <p>Copado Metadata pipeline I</p>
-        </div>
-        <div class="cert-item">
-            <img src="image/cert3.png" alt="Cert 3">
-            <p>Copado Metadata pipeline II</p>
-        </div>
-        <div class="cert-item">
-            <img src="image/cert3.png" alt="Cert 3">
-            <p>Copado Source Format pipeline I</p>
-        </div>
-    </div>
-</section>
+    </section>
+</main>
 
 <!-- Contact / Footer -->
 <footer id="contact">
     <div class="footer-content">
-      <p>&copy; 2026 @nirajanDevHub108. All Rights Reserved.</p>
-  
-      <div class="social-links">
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/nirajan-singh-82b851190/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-          <span>LinkedIn</span>
-        </a>
-  
-        <!-- GitHub -->
-        <a href="https://github.com/nirajanDevHub108" target="_blank">
-          <i class="fab fa-github"></i>
-          <span>GitHub</span>
-        </a>
-  
-        <!-- Email -->
-        <a href="mailto:nirajandevhub108@gmail.com">
-          <i class="fas fa-envelope"></i>
-          <span>Email</span>
-        </a>
-      </div>
+        <p>&copy; 2026 @nirajanDevHub108. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/nirajan-singh-82b851190/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/nirajanDevHub108" target="_blank">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="mailto:nirajandevhub108@gmail.com">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
     </div>
-  </footer>
-  
+</footer>
+
+<script>
+    function openMenu() {
+        document.getElementById("mobile-menu").classList.add("open");
+    }
+
+    function closeMenu() {
+        document.getElementById("mobile-menu").classList.remove("open");
+    }
+</script>
 
 </body>
 </html>

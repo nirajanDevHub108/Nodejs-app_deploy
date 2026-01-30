@@ -178,18 +178,19 @@ section h2 {
 }
 
 /* Footer */
+/* Footer */
 footer {
-  background-color: #0b0c10; /* dark black background */
+  background-color: #0b0c10;
   color: #ffffff;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem;
 }
 
 footer .social-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
+  gap: 3rem;
+  margin-top: 1.5rem;
 }
 
 footer .social-links a {
@@ -198,21 +199,27 @@ footer .social-links a {
   align-items: center;
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social-links a i {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+  color: #007bff;
 }
 
 footer .social-links a span {
-  margin-top: 0.3rem;
   font-size: 0.9rem;
 }
 
 footer .social-links a:hover {
-  color: #1da1f2; /* blue hover for a nice accent */
+  transform: translateY(-4px);
+  color: #1da1f2;
 }
 
 footer p {
-  margin: 0;
   font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 /* Responsive */

@@ -57,6 +57,13 @@ body {
 .mobile-menu a:hover {
   color: #2563eb;
 }
+.menu-icon {
+  display: none;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
 
 /* Close button */
 .close-btn {
@@ -310,5 +317,10 @@ footer p {
   .navbar .nav-links {
     flex-direction: column;
     gap: 0.5rem;
+  }
+  .navbar .nav-links {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
   }
 }

@@ -283,33 +283,32 @@ footer p {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .menu-icon,
   .desktop-nav {
     display: none !important;
   }
 
-  /* Center the logo / name */
+  /* Navbar: center logo, hamburger on left */
   .navbar {
-    justify-content: center; /* centers logo horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* logo in center */
+    position: relative; /* for absolute positioning of hamburger */
+    padding: 1rem 1.5rem;
   }
 
+  /* Logo */
   .logo {
-    font-size: 1.8rem; /* make it slightly bigger on mobile */
+    margin: 0 auto; /* center it */
+    font-size: 1.8rem;
     text-align: center;
   }
-  .hero {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-  .hero-text button {
-    margin-top: 1rem;
-  }
-  .navbar {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .navbar .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
+
+  /* Hamburger on left */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    left: 1.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
   }
 }

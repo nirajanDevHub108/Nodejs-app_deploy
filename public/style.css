@@ -359,15 +359,17 @@ footer p {
   text-decoration: none;
   color: #fff;
 }
-
-.trailhead-icon {
-  width: 22px;
-  height: 22px;
-  filter: brightness(0) invert(1);
+footer .social-links a.icon-img img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0.4rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.trailhead-link:hover .trailhead-icon {
-  filter: none;
+/* Hover effect – matches icon behavior */
+footer .social-links a.icon-img:hover img {
+  transform: scale(1.15);
+  filter: brightness(1.2);
 }
 
 /* Responsive */

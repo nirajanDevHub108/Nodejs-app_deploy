@@ -363,6 +363,11 @@ footer .social-links a.icon-img img {
   width: 30px;
   height: 30px;
   margin-bottom: 0.4rem;
+
+  /* Convert PNG to blue */
+  filter: brightness(0) saturate(100%) invert(33%) sepia(96%) saturate(2900%)
+    hue-rotate(200deg) brightness(95%) contrast(105%);
+
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 

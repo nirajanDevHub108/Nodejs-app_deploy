@@ -171,7 +171,59 @@ section h2 {
   color: #007bff;
   font-size: 2rem;
 }
+/* YouTube Section */
+.youtube-section {
+  padding: 80px 20px;
+  background: #0f172a;
+  color: #fff;
+  text-align: center;
+}
 
+.youtube-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.youtube-subtitle {
+  color: #cbd5f5;
+  margin-bottom: 35px;
+  font-size: 1rem;
+}
+
+.youtube-embed {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.youtube-embed iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 14px;
+}
+
+.youtube-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #ff0000;
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.youtube-btn:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+}
 /* Portfolio */
 .portfolio-gallery {
   display: flex;

@@ -351,6 +351,24 @@ footer p {
   font-size: 0.9rem;
   opacity: 0.8;
 }
+/* Trailhead Footer Icon */
+.trailhead-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.trailhead-icon {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+}
+
+.trailhead-link:hover .trailhead-icon {
+  filter: none;
+}
 
 /* Responsive */
 @media (max-width: 768px) {

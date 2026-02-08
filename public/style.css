@@ -305,68 +305,62 @@ section h2 {
 }
 
 /* About Me Section */
-.about-content {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #e0e0e0;
-}
-
 .trailhead-section {
   background: #0d0d0d;
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
+  padding: 70px 20px;
+  text-align: center; /* 🔥 key fix */
+}
+
+.trailhead-section h2 {
+  color: #ffffff;
+  margin-bottom: 35px; /* space below heading */
+  font-size: 2rem;
 }
 
 .trailhead-card {
   background: #121212;
   border: 1px solid #00c853;
-  border-radius: 16px;
-  padding: 30px;
-  max-width: 420px;
-  text-align: center;
-  box-shadow: 0 0 25px rgba(0, 200, 83, 0.15);
+  border-radius: 18px;
+  padding: 40px 35px;
+  max-width: 520px; /* 🔥 bigger card */
+  margin: 0 auto; /* 🔥 centers horizontally */
+  box-shadow: 0 0 30px rgba(0, 200, 83, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .trailhead-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 35px rgba(0, 200, 83, 0.35);
+  transform: translateY(-8px);
+  box-shadow: 0 0 45px rgba(0, 200, 83, 0.4);
 }
 
 .trailhead-card img {
-  width: 70px;
-  margin-bottom: 15px;
-  filter: drop-shadow(0 0 10px rgba(0, 200, 83, 0.5));
-}
-
-.trailhead-card h2 {
-  color: #ffffff;
+  width: 85px; /* 🔥 bigger icon */
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 12px rgba(0, 200, 83, 0.6));
 }
 
 .trailhead-card p {
   color: #b0b0b0;
-  font-size: 15px;
-  margin: 15px 0 25px;
+  font-size: 16px; /* 🔥 bigger text */
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
 .trailhead-btn {
   display: inline-block;
-  padding: 12px 26px;
+  padding: 14px 32px; /* 🔥 bigger button */
   background: #00c853;
   color: #000;
   font-weight: 600;
-  border-radius: 30px;
+  border-radius: 32px;
   text-decoration: none;
+  font-size: 15px;
   transition: all 0.3s ease;
 }
 
 .trailhead-btn:hover {
   background: #009624;
-  color: #fff;
+  color: #ffffff;
 }
 /* guidance section */
 .guidance-section {

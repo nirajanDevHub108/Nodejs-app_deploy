@@ -196,6 +196,48 @@
       </a>
     </div>
   </section>
+ <!-- Guidance Section -->
+ <section class="guidance-section" id="guidance">
+    <h2>Need Guidance or Have a Question?</h2>
+    <p class="guidance-subtext">
+      Feel free to reach out for Salesforce, DevOps, or career guidance.
+    </p>
+  
+    <form id="guidanceForm" class="guidance-form">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required placeholder="Enter your name">
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" required placeholder="Enter your email">
+      </div>
+  
+      <div class="form-group">
+        <label for="topic">Topic</label>
+        <select id="topic" required>
+          <option value="">Select a topic</option>
+          <option value="Salesforce DevOps">Salesforce DevOps</option>
+          <option value="Career Guidance">Career Guidance</option>
+          <option value="Trailhead / Learning Path">Trailhead / Learning Path</option>
+          <option value="Project Help">Project Help</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="message">Your Question</label>
+        <textarea id="message" rows="4" required placeholder="Write your question here..."></textarea>
+      </div>
+  
+      <button type="submit" class="submit-btn">
+        Send Query
+      </button>
+  
+      <p id="formStatus" class="form-status"></p>
+    </form>
+  </section>
 
 <!-- Contact / Footer -->
 <footer id="contact">
@@ -231,6 +273,6 @@
         document.getElementById("mobile-menu").classList.remove("open");
     }
 </script>
-
+<script src="form.js" defer></script>
 </body>
 </html>

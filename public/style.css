@@ -364,29 +364,39 @@ section h2 {
 }
 /* guidance section */
 .guidance-section {
+  background: #0d0d0d;
   padding: 70px 20px;
   text-align: center;
 }
 
+.guidance-section h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
 .guidance-subtext {
-  color: #555;
-  margin-bottom: 30px;
+  color: #b0b0b0;
+  margin-bottom: 35px;
 }
 
 .guidance-form {
-  max-width: 600px;
+  max-width: 520px;
   margin: auto;
-  text-align: left;
+  background: #121212;
+  padding: 35px;
+  border-radius: 16px;
+  border: 1px solid #00c853;
+  box-shadow: 0 0 30px rgba(0, 200, 83, 0.2);
 }
 
 .form-group {
+  text-align: left;
   margin-bottom: 18px;
 }
 
 .form-group label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
 }
 
 .form-group input,
@@ -394,38 +404,61 @@ section h2 {
 .form-group textarea {
   width: 100%;
   padding: 12px;
+  margin-top: 6px;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  color: #fff;
   border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 14px;
 }
 
 .form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
+.form-group select:focus,
+.form-group textarea:focus {
   outline: none;
-  border-color: #00a1e0;
+  border-color: #00c853;
 }
 
 .submit-btn {
   width: 100%;
   padding: 14px;
-  background-color: #00a1e0;
-  color: white;
+  background: #00c853;
+  color: #000;
   font-weight: 600;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .submit-btn:hover {
-  background-color: #0070d2;
+  background: #009624;
+  color: #fff;
 }
 
-.form-status {
-  margin-top: 15px;
-  font-size: 14px;
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #00c853;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  z-index: 9999;
 }
 
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.error {
+  background: #d32f2f;
+}
 /* Footer */
 footer {
   background-color: #0b0c10;

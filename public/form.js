@@ -1,40 +1,46 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("guidanceForm");
-  const formStatus = document.getElementById("formStatus");
-
-  if (!form || !formStatus) return;
+  const submitBtn = form.querySelector("button");
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const topic = document.getElementById("topic").value;
-    const message = document.getElementById("message").value.trim();
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
 
-    if (!name || !email || !topic || !message) {
-      formStatus.textContent = "Please fill in all fields.";
-      formStatus.style.color = "red";
-      return;
-    }
+    const data = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      topic: document.getElementById("topic").value,
+      message: document.getElementById("message").value,
+    };
 
-    const subject = `Guidance Request: ${topic}`;
-    const body = `
-  Name: ${name}
-  Email: ${email}
-  Topic: ${topic}
-  
-  Message:
-  ${message}
-      `;
-
-    window.location.href = `mailto:nirajandevhub108@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-
-    formStatus.textContent = "Opening email client...";
-    formStatus.style.color = "green";
-
-    form.reset();
+    emailjs
+      .send("service_ixx0j4r", "template_0d9hzek", data)
+      .then(() => {
+        showToast("✔ Query sent successfully!", "success");
+        form.reset();
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Send Query";
+      })
+      .catch(() => {
+        showToast("❌ Failed to send. Try again.", "error");
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Send Query";
+      });
   });
 });
+
+function showToast(message, type) {
+  const toast = document.createElement("div");
+  toast.className = `toast ${type}`;
+  toast.textContent = message;
+
+  document.body.appendChild(toast);
+
+  setTimeout(() => toast.classList.add("show"), 100);
+  setTimeout(() => {
+    toast.classList.remove("show");
+    toast.remove();
+  }, 3000);
+}
